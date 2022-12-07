@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    width: 0;
+    padding: 0;
+    border: 0;
+}
+/*
+body 
+{
+    background-color: #1c1c21;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: auto;
+}
+*/
+header {
+    background-color: aqua;
+
+}
+header .logo {
+    color: rgb(255, 230, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: auto;
+}
+main {
+
+}
+footer {
+    
+}
