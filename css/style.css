@@ -5,20 +5,22 @@
     padding: 0;
 }
 body {
-    background-color: rgb(77, 77, 77);
+    background-color: #1c1b21;    
     font-family: poppins;
-    max-width: 1920px;
-    margin: auto;
+    max-width: 100%;
+    *margin: auto;
 }
-header {
+header {   
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 0px 0px;
-    padding: 0px 100px;
-    max-width: 100%;
+    justify-content: space-around;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     align-items: center;
-    background-color: rgb(44, 44, 44);
+    background-color: rgb(83, 83, 83);
+    position: fixed;
+    
 }
 .logo {
     flex-direction: column;
@@ -30,16 +32,17 @@ header {
     color: rgb(255, 255, 255);
     font-family: poppins;
     font-size: 10px;
+    cursor: pointer;
 }
 h1 {
     font-weight: 300;
 }
 nav ul li {
-    display:inline-block;
-    margin: 5px;
-    padding: 5px;
-    justify-content: space-between;
-    align-items: flex-end;
+    display: inline-block;
+    justify-content: space-around;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 10px 10px 10px;
+    align-items:center;
     font-family: poppins;
     font-size: 15px;
     text-decoration: none;
@@ -65,28 +68,33 @@ a:hover {
     color: rgb(255, 255, 255);
     transition: 0.5s all;
 }
-main{
+
+.home{
+    width: 100%;
+    height: 700px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     margin: 0px;
     padding: 30px;
-    background-color: rgb(124, 124, 124);
+    background-color: #1c1b21;
 }
 h2 {
     font-size: 60px;
-    line-height: 50px;
+    line-height: 60px;
     font-weight: 1000;
-}
-span {
     color: darkgoldenrod;
 }
+span {
+    color: rgb(255, 255, 255);
+}
 p {
-    font-size: 25px;
+    color: darkgoldenrod;
+    font-size: 20px;
     line-height: 30px;
     max-width: 500px;
-    margin-top: 15px;
+    margin-top: 0px;
 }
 button {
     width: 300px;
@@ -96,13 +104,49 @@ button {
     color: darkgoldenrod;
     border-radius: 10px;
     border: none;
-    box-shadow: 10px 10px 10px 2px;
+    transition: 0.3s all;
+    box-shadow: -5px 5px 10px 3px;
+    cursor: pointer;
 }
+button:hover {
+    background-color: darkgoldenrod;
+    color: rgb(255, 255, 255);
 
+}
 img {
 
 }
 
+
+.sobre {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0px;
+    margin: 0px;
+    padding: 0px 0px;
+    background-color: #1c1b21;
+    color: aliceblue;
+}
+
+.contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;
+    padding: 30px;
+    background-color: rgb(107, 107, 107);
+}
+
 footer {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(70, 70, 70);
 
 }
