@@ -9,40 +9,52 @@
     text-decoration: none;
 }
 body {
-    background-color: red;
+    background-color: #1c1b21;    
+    /*background-color: #ff0000;*/    
+    font-family: 'poppins', sans-serif;
+    display: block;
+    margin: 0px;
+    padding: 0px;
 }
 header {   
     width: 100%;
     height: 77px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 0px 50px;
-    background-color: rgb(83, 83, 83);
+    padding: 0px 100px;
+    background-color: rgb(0, 0, 0);
     position: fixed;
     top: 0;
     left: 0;    
 }
-.logo {
-    line-height: 18px;
+.logo a {
     color: rgb(255, 255, 255);
-    font-family: 'poppins', sans-serif;
+    padding: 20px;
+}
+.logo a:hover {
+    color: #FF9E19 ;
+    transition: 0.3s all;
+}
+.logo {
+    flex-direction: column;
+    line-height: 18px;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: 'poppins',sans-serif;
     font-size: 10px;    
     cursor: pointer;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    background-color: black;
 }
 #a-logo{
     padding: 0;
     text-decoration: none;
 }
-h1 {
+.logo h1 {
     font-weight: 300;
 }
 nav{
-    margin: 50px;
+    margin: 0px;
 }
 nav ul li {
     display: inline-block;
@@ -52,99 +64,113 @@ nav ul li {
     font-size: 15px;
     text-decoration: none;
 }
-a {
+nav a {
     color: rgb(255, 255, 255);
     padding: 20px;
-
 }
-a:hover {
-    color: rgb(255, 211, 67) ;
+nav a:hover {
+    color: #FF9E19 ;
     transition: 0.3s all;
 }
 #btn-menu {
-    border: 3px solid rgb(255, 211, 67);
+    border: 3px solid #FF9E19;
     padding: 3px 20px;
     margin: 20px;
     margin-right: 0px;
     border-radius: 10px;
-    /*background-color: white;*/
     color: rgb(255, 255, 255);
 }
 #btn-menu:hover {
     border: 3px solid rgb(255, 255, 255);
-    background-color: rgb(255, 211, 67);
+    background-color: #FF9E19;
     color: #1c1b21;
     transition: 0.5s all;
 }
+
+
+main{
+    /*background-color: chartreuse;*/
+    width: 100%;
+    display: block;
+    justify-content: space-around;
+}
 .home{
     flex-direction: row;
-    width: 100%;
-    height: 650px;
+    height: 600px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 70px 0px 0px 00px;
-    padding: 50px 0px px 00px;
+    margin: 77px 0px 0px 0px;
+    padding: 100px 100px;
     background-color: #1c1b21;
-    background-color: #080030;
-}
-#home {
-    /*width: 100%;*/
-    height: 100%px;
-    margin: 0px 0px 0px 0px;
-    padding: 20px 20px 20px 20px;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-around;
-}
+}/*
 #img-home{
-    /*width: 100%;*/
-    height: 100%;
     margin: 0px 0px 0px 0px;
-    padding: 20px 20px 20px 20px ;
+    padding: 0px 0px 0px 0px ;
     align-items: center;
     justify-content: space-around;
-
-
-
-}
-
+}*/
 h2 {
-    font-size: 60px;
-    line-height: 60px;
-    font-weight: 1000;
-    color: darkgoldenrod;
+    max-width: 10px;
+    font-size: 100px;
+    line-height: 70px;
+    font-weight: 100;
+    color: #FF9E19;
 }
 span {
     color: rgb(255, 255, 255);
 }
 p {
-    color: darkgoldenrod;
-    font-size: 20px;
-    line-height: 20px;
-    max-width: 500px;
-    margin-top: 0px;
-}
-button {
-    width: 300px;
-    margin-top: 30px;
-    padding: 5px;
-    font-size: 30px;
-    color: darkgoldenrod;
-    border-radius: 10px;
-    border: none;
-    transition: 0.3s all;
-    box-shadow: -5px 5px 10px 3px;
-    cursor: pointer;
-}
-button:hover {
-    background-color: darkgoldenrod;
     color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 10px;
+}
+.btn {
+    background-color: red;
+    color: #1c1b21;
+    font-size: 24px;
+    margin: 0px;
+    padding: 0px 0px;
+    border-radius: 20px;
+}
+.btn a {
+    background-color: #ffffff;
+    color: black;
+    font-size: 24px;
+    margin: 0px;
+    padding: 7px 60px;
+    border-radius: 20px;
+}
+.btn :hover {
+    background-color:#FF9E19;
 }
 
 
 
-
+.home2 {
+    background-color: #1c1b21;
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+.home2 .elemento {
+    width: 100%;
+    height: 00x;
+    margin: auto;
+    text-align: center;    
+}
+.home2 .elemento h3 {
+    font-size: 50px;
+    font-weight: 100;
+    color: #FF9E19;
+}
+.home2 .elemento p {
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 25px;
+    color: #ffffff;
+}
 
 
 
@@ -171,6 +197,34 @@ button:hover {
     margin-top: 30px;
     padding: 0px;
 }
+
+
+
+.portifolio {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0px;
+    margin: 0px;
+    padding: 0px 0px;
+    background-color: #1c1b21;
+    color: aliceblue;
+}
+#art-portifolio {
+    margin-top: 100px;
+    padding: 0px;
+    display: block;
+}
+#p-portifolio {
+    margin-top: 30px;
+    padding: 0px;
+}
+
+
+
 .contato {
     display: flex;
     flex-direction: row;
@@ -180,16 +234,75 @@ button:hover {
     padding: 30px;
     background-color: rgb(107, 107, 107);
 }
-.contato form {
-    display: block;
 
+
+
+.orcamento {
+    background-color: #1c1b21;
+    width: 100%;
+}
+#orcamento {
+    background-color: #1c1b21;
+    display: flex;
+    height: 150px;
+    align-items: center;
+    font-size: 50px;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+}
+.orcamento .centro {
+    width: 100%;
+    height: 500px;    
+}
+.orcamento form {
+    background-color: #1c1b21;
+    display: flex;
+    height: 300px;
+    position: relative;
+    margin: auto;
+    flex-direction: column;
+    width: 50%;
+}
+form [type="submit"] {
+    width: 100%;
+    background-color: #FF9E19;
+    color: #1c1b21;
+    font-weight: bold;
+}
+form [type="submit"]:hover {
+    cursor: pointer;
+}
+.orcamento input {
+    margin-top: 20px;
+    height: 100px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
 }
 
-footer {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    color: rgb(0, 0, 0);
-    background-color: rgb(70, 70, 70);
 
+
+footer {
+    background-color: #1c1b21;
+    height: 50px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    display: inline;
+    align-items: center;
+}
+.rodape {
+    height: 50px;
+    align-items: center;
+    background-color:#1c1b21;
+    padding: 0px 0px;
+}
+.rodape h3 {
+    color: #FF9E19;
+    padding: 15px;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
 }
