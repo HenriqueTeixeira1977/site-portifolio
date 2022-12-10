@@ -8,17 +8,23 @@
     list-style: none;
     text-decoration: none;
 }
+
+
+
 body {
-    background-color: #1c1b21;    
-    /*background-color: #ff0000;    */
+    /*background-color: #1c1b21;*/    
+    background-color: #ff0000;    
     font-family: 'poppins', sans-serif;
     flex-direction: column;
     align-items: center;
     display: flex;
     margin: auto;
-    max-width: 2280px;
-
+    max-width: 1920px;
+    padding: 0px 0px;
 }
+
+
+
 header {   
     width: 100%;
     height: 77px;
@@ -30,21 +36,22 @@ header {
     background-color: rgb(0, 0, 0);
     position: fixed;
     top: 0;
-    left: 0;    
+    left: 0;   
+    margin: 0 auto; 
 }
 .logo a {
-    color: rgb(255, 255, 255);
+    color: aliceblue;
     padding: 20px;
 }
 .logo a:hover {
-    color: #FF9E19 ;
+    color: #C68F2F ;
     transition: 0.3s all;
 }
 .logo {
     flex-direction: column;
     line-height: 18px;
     align-items: center;
-    color: rgb(255, 255, 255);
+    color: aliceblue;
     font-family: 'poppins',sans-serif;
     font-size: 10px;    
     cursor: pointer;
@@ -68,33 +75,38 @@ nav ul li {
     text-decoration: none;
 }
 nav a {
-    color: rgb(255, 255, 255);
+    color: aliceblue;
     padding: 20px;
 }
 nav a:hover {
-    color: #FF9E19 ;
+    color: #C68F2F;
     transition: 0.3s all;
 }
 #btn-menu {
-    border: 3px solid #FF9E19;
+    border: 3px solid #C68F2F;
+    color: aliceblue;
     padding: 3px 20px;
     margin: 20px;
     margin-right: 0px;
     border-radius: 10px;
-    color: rgb(255, 255, 255);
+      
 }
 #btn-menu:hover {
-    border: 3px solid rgb(255, 255, 255);
-    background-color: #FF9E19;
+    border: 3px solid aliceblue;
+    background-color: #C68F2F;
     color: #1c1b21;
     transition: 0.5s all;
 }
 
 
+
 main{
-    background-color: chartreuse;
+    /*background-color:#211b1b;*/
+    background-color:#6fff00;
     width: 100%;
     flex-direction: column;
+    margin: 0 auto;
+    padding: 10px 10px;
 }
 
 
@@ -108,25 +120,19 @@ main{
     margin: 77px 0px 0px 0px;
     padding: 100px 100px;
     background-color: #1c1b21;
-}/*
-#img-home{
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px ;
-    align-items: center;
-    justify-content: space-around;
-}*/
-h2 {
+}
+.home h2 {
     max-width: 10px;
     font-size: 100px;
     line-height: 70px;
     font-weight: 100;
-    color: #FF9E19;
+    color: #C68F2F;
 }
-span {
-    color: rgb(255, 255, 255);
+.home span {
+    color:aliceblue;
 }
-p {
-    color: rgb(255, 255, 255);
+.home p {
+    color:aliceblue;
     font-size: 18px;
     line-height: 25px;
     margin-top: 10px;
@@ -141,7 +147,7 @@ p {
     border-radius: 20px;
 }
 .btn a {
-    background-color: #ffffff;
+    background-color:aliceblue;
     color: black;
     font-size: 24px;
     margin: 0px;
@@ -149,7 +155,7 @@ p {
     border-radius: 20px;
 }
 .btn :hover {
-    background-color:#FF9E19;
+    background-color:#C68F2F;
 }
 
 
@@ -161,8 +167,7 @@ p {
     width: 100%;
     height: 700px;
     margin: 0 auto;
-    padding: 80px 100px;
-    flex-direction: column;
+    padding: 0px 0px;
 }
 .home2 .elemento {
     width: 100%;
@@ -172,28 +177,24 @@ p {
 .home2 .elemento h3 {
     font-size: 50px;
     font-weight: 100;
-    color: #FF9E19;
+    color: #C68F2F;
 }
 .home2 .elemento p {
     font-size: 18px;
     font-weight: 100;
     line-height: 25px;
-    color: #ffffff;
-    margin: 0px 0px;
-    padding: 0px 150px;
+    color:aliceblue;
+    margin: 0px 100px;
+    padding: 0px 0px;
 }
-
-
-
 .cards{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     width: 100%;
     height: 400px;
     margin: 0 auto;
-    padding: 0px;
 }
 .card1 {
     display: block;
@@ -201,16 +202,17 @@ p {
     align-items: center;
     justify-content: center;
     margin: auto;
-    padding: 50px 30px;
+    padding: 0px 50px;
     text-align: center;
+    /*background-color: brown;*/
 }
-.card2 {
+.card2 {    
     display: block;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: auto;
-    padding: 50px 30px;
+    padding: 0px 50px;
     text-align: center;
 }
 .card3 {
@@ -219,61 +221,130 @@ p {
     align-items: center;
     justify-content: center;
     margin: auto;
-    padding: 50px 30px;
+    padding: 0px 50px;
     text-align: center;
 }
+.cards h3 {
+    font-size: 24px;
+    color: #C68F2F;
 
+}
+.cards p {
+    color:aliceblue;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 10px;
+    font-weight: 100;
+}
 
 
 
 
 .sobre {
+    background-color:#1c1b21;
     width: 100%;
     height: 700px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-top: 0px;
     margin: 0px;
     padding: 0px 0px;
-    background-color: #1c1b21;
-    color: aliceblue;
 }
-#art-sobre {
-    margin-top: 100px;
-    padding: 0px;
-    display: block;
+.sobre aside {
+    /*background-color: blueviolet;*/
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
-#p-sobre {
-    margin-top: 30px;
-    padding: 0px;
+.sobre article {
+    background-color: rgba(165, 42, 42, 0);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    margin: 0 auto;
+    padding: 0px 150px 0px 0px;
 }
+.sobre h3 {
+    font-size: 50px;
+    font-weight: 100;
+    color: #C68F2F;
+}
+.sobre h4 {
+    font-size:30px;
+    font-weight: 100;
+    color: #C68F2F;
+}
+.sobre p {
+    color:aliceblue;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 100;
+    text-align: left;
+}
+
 
 
 
 .portifolio {
-    width: 100%;
-    height: 700px;
+    background: url(../img/background-comp-black.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 1000px;
+}
+.portifolio aside {
+    background-color: rgba(0, 255, 255, 0);
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     align-items: center;
-    margin-top: 0px;
-    margin: 0px;
-    padding: 0px 0px;
-    background-color: #1c1b21;
-    color: aliceblue;
-}
-#art-portifolio {
-    margin-top: 100px;
+    justify-content:center;
+    flex-direction: row;
+    margin: 0 auto;
     padding: 0px;
-    display: block;
+    margin-top: 50px;
 }
-#p-portifolio {
-    margin-top: 30px;
-    padding: 0px;
+.box {
+    background-color: #c68f2f00;
+    width: 140px;
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px;
+    padding: 30px 0px;
 }
+.portifolio article {
+    background-color: rgba(165, 42, 42, 0);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+.portifolio h2 {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-size: 100px;
+    line-height: 70px;
+    font-weight: 100;
+    color: #C68F2F;
+}
+.portifolio p {
+    color:aliceblue;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 10px;
+    font-weight: 100;
+}
+
 
 
 
@@ -326,7 +397,7 @@ form [ type="mensagem" ] {
 }
 form [type="submit"] {
     width: 100%;
-    background-color: #FF9E19;
+    background-color: #C68F2F;
     color: #1c1b21;
     font-size: 50px;
     font-weight: bold;
@@ -335,28 +406,39 @@ form [type="submit"] {
 form [type="submit"]:hover {
     cursor: pointer;
 }
+
+
+
 footer {
-    background-color:rgb(0, 0, 0);
+    background-color:black;
     width: 100%;
     height: 50px;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    display: inline;
+    display: flex;
     align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    /*margin: 0 auto;*/
+    padding: 15px 0px;  
 }
-
-
 
 .rodape {
-    height: 50px;
+    display: flex;
+    width: 100%;
+    color:aliceblue;
+    padding: 0px;
     align-items: center;
-    background-color:rgb(0, 0, 0);
-    padding: 0px 0px;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
 }
 .rodape h3 {
-    color: #FF9E19;
-    padding: 15px;
+    display: flex;
+    width: 100%;
+    color:aliceblue;
+    padding: 0px;
     align-items: center;
+    justify-content: center;
     font-size: 15px;
     font-weight: 200;
     text-align: center;
