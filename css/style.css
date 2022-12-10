@@ -11,14 +11,19 @@
 
 
 
+html {
+    scroll-behavior: smooth;
+}
+
+
+
 body {
     /*background-color: #1c1b21;*/    
-    background-color: #ff0000;    
+    background-color:#1c1b21;    
     font-family: 'poppins', sans-serif;
     flex-direction: column;
-    align-items: center;
     display: flex;
-    margin: auto;
+    margin: 0 auto;
     max-width: 1920px;
     padding: 0px 0px;
 }
@@ -44,7 +49,7 @@ header {
     padding: 20px;
 }
 .logo a:hover {
-    color: #C68F2F ;
+    color: #C68F2F;
     transition: 0.3s all;
 }
 .logo {
@@ -88,8 +93,7 @@ nav a:hover {
     padding: 3px 20px;
     margin: 20px;
     margin-right: 0px;
-    border-radius: 10px;
-      
+    border-radius: 10px;      
 }
 #btn-menu:hover {
     border: 3px solid aliceblue;
@@ -101,30 +105,29 @@ nav a:hover {
 
 
 main{
-    /*background-color:#211b1b;*/
-    background-color:#6fff00;
+    background-color:#1c1b21;
     width: 100%;
     flex-direction: column;
     margin: 0 auto;
-    padding: 10px 10px;
+    padding: 0px 0px 0px 0px;
 }
 
 
 
 .home{
     flex-direction: row;
-    height: 600px;
+    height: 800px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 77px 0px 0px 0px;
-    padding: 100px 100px;
+    margin: 0px 0px 0px 0px;
+    padding: 100px 100px 100px 100px;
     background-color: #1c1b21;
 }
 .home h2 {
     max-width: 10px;
-    font-size: 100px;
-    line-height: 70px;
+    font-size: 70px;
+    line-height: 60px;
     font-weight: 100;
     color: #C68F2F;
 }
@@ -135,7 +138,7 @@ main{
     color:aliceblue;
     font-size: 18px;
     line-height: 25px;
-    margin-top: 10px;
+    margin-top: 0px;
     font-weight: 100;
 }
 .btn {
@@ -196,7 +199,7 @@ main{
     height: 400px;
     margin: 0 auto;
 }
-.card1 {
+.card {
     display: block;
     flex-direction: column;
     align-items: center;
@@ -205,24 +208,6 @@ main{
     padding: 0px 50px;
     text-align: center;
     /*background-color: brown;*/
-}
-.card2 {    
-    display: block;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    padding: 0px 50px;
-    text-align: center;
-}
-.card3 {
-    display: block;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    padding: 0px 50px;
-    text-align: center;
 }
 .cards h3 {
     font-size: 24px;
@@ -243,13 +228,13 @@ main{
 .sobre {
     background-color:#1c1b21;
     width: 100%;
-    height: 700px;
+    height: 800px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin: 0px;
-    padding: 0px 0px;
+    margin: 0px 0px 50px 0px;
+    padding: 0px 0px 0px 0px;
 }
 .sobre aside {
     /*background-color: blueviolet;*/
@@ -292,26 +277,24 @@ main{
 
 
 
-
 .portifolio {
     background: url(../img/background-comp-black.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    height: 1000px;
+    height: 800px;
 }
 .portifolio aside {
-    background-color: rgba(0, 255, 255, 0);
+    background-color: rgba(255, 0, 0, 0);
     display: flex;
     align-items: center;
     justify-content:center;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0 auto;
-    padding: 0px;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 .box {
-    background-color: #c68f2f00;
+    background-color: #ffa20000;
     width: 140px;
     height: 340px;
     display: flex;
@@ -320,13 +303,13 @@ main{
     padding: 30px 0px;
 }
 .portifolio article {
-    background-color: rgba(165, 42, 42, 0);
     display: flex;
     align-items: center;
     justify-content:center;
-    flex-direction: column;
+    flex-direction: row;
     margin: 0 auto;
-    margin-top: 150px;
+    padding: 0px;
+    margin-top: 0px;
 }
 .portifolio h2 {
     display: flex;
@@ -337,7 +320,16 @@ main{
     font-weight: 100;
     color: #C68F2F;
 }
-.portifolio p {
+.p-port {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0px;
+    margin-top: 20px;
+}
+.p-port p {
     color:aliceblue;
     font-size: 18px;
     line-height: 25px;
@@ -356,38 +348,67 @@ main{
     height: 500px;
     padding: 50px;
     align-items: center;
-    background-color: rgb(107, 107, 107);
+    background-color:#1c1b21;
 }
+.contato h2 {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 100;
+    color: #C68F2F;
+    margin: 30px;
+}
+.contato p {
+    color:aliceblue;
+    font-size: 18px;
+    line-height: 15px;
+    margin-top: 10px;
+    font-weight: 100;
+    margin: 30px;
+}
+
 
 
 
 .orcamento {
     background-color: #1c1b21;
     width: 100%;
-}
-#orcamento {
+    height: 800px;
     display: flex;
-    flex-direction: column;
-    margin: auto;
+    justify-content: center;
     align-items: center;
-    font-size: 100px;    
+    flex-direction: column;
+    margin: 0 auto;
     padding: 100px 100px;
-    width: 100%;
 }
-.orcamento form {
+.orcamento h2 {
+    font-size: 100px;
+    line-height: 70px;
+    font-weight: 100;
+    color: #C68F2F;
+    margin: 30px;
+}
+.orcamento p {
+    font-size: 18px;
+    line-height: 15px;
+    font-weight: 100;
+    color:aliceblue;
+    margin: 30px;
+}
+.form form {
     background-color: #1c1b21;
     display: flex;
     flex-direction: column;
     height: 500px;
-    margin: auto;
-    width: 40%;
-    padding: 0px 0px 600px 0px;
-    text-align: start;
+    width: 800px;
+    padding: 0px 0px 100px 0px;
 }
-.orcamento input {
+.form input {
     margin-top: 20px;
-    height: 70px;
-    padding: 15px;
+    height: 50px;
+    padding: 10px;
     border-radius: 10px;
     border: none;
     font-size: 20px;
@@ -405,41 +426,29 @@ form [type="submit"] {
 }
 form [type="submit"]:hover {
     cursor: pointer;
+    background-color: #db9315f1;
+    color: aliceblue;
 }
 
 
 
 footer {
-    background-color:black;
-    width: 100%;
-    height: 50px;
+    background-color: black;
+    height: 77px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
-    /*margin: 0 auto;*/
-    padding: 15px 0px;  
+    flex-direction:row;
+    margin: 0 auto;
+    padding: 0px 0px;
 }
-
 .rodape {
-    display: flex;
-    width: 100%;
-    color:aliceblue;
+    margin: 0px;
     padding: 0px;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    font-weight: 200;
-    text-align: center;
 }
-.rodape h3 {
-    display: flex;
-    width: 100%;
+.rodape p {   
     color:aliceblue;
-    padding: 0px;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    font-weight: 200;
-    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 100;
 }
