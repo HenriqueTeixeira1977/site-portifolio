@@ -10,11 +10,9 @@
 }
 
 
-
 html {
     scroll-behavior: smooth;
 }
-
 
 
 body {
@@ -27,7 +25,6 @@ body {
     max-width: 1920px;
     padding: 0px 0px;
 }
-
 
 
 header {   
@@ -68,6 +65,7 @@ header {
 .logo h1 {
     font-weight: 300;
 }
+
 nav{
     margin: 0px;
 }
@@ -103,7 +101,6 @@ nav a:hover {
 }
 
 
-
 main{
     background-color:#1c1b21;
     width: 100%;
@@ -111,7 +108,6 @@ main{
     margin: 0 auto;
     padding: 0px 0px 0px 0px;
 }
-
 
 
 .home{
@@ -162,7 +158,6 @@ main{
 }
 
 
-
 .home2 {
     background-color:#1c1b21;
     display: flex;
@@ -197,21 +192,25 @@ main{
     flex-direction: row;
     width: 100%;
     height: 600px;
-    margin: 30 auto;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
     /*position: absolute;*/
 
 }
 .card1 {
-    width: 33%;
+    width: 30%;
     height: 400px;
     display: block;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    padding: 50px 50px;
+    padding: 40px 40px;
     text-align: justify;
     background-color: #242529;
+    border-radius: 10px;
+
 }
 .card2 {
     width: 33%;
@@ -221,9 +220,11 @@ main{
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    padding: 50px 50px;
+    padding: 40px 40px;
     text-align: justify;
     background-color: #242529;
+    border-radius: 10px;
+
 }
 .card3 {
     width: 33%;
@@ -233,9 +234,11 @@ main{
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    padding: 50px 50px;
+    padding: 40px 40px;
     text-align: justify;
     background-color: #242529;
+    border-radius: 10px;
+
 }
 .cards h3 {
     font-size: 24px;
@@ -249,8 +252,6 @@ main{
     margin-top: 10px;
     font-weight: 100;
 }
-
-
 
 
 .sobre {
@@ -302,7 +303,6 @@ main{
     font-weight: 100;
     text-align: left;
 }
-
 
 
 .portifolio {
@@ -365,8 +365,6 @@ main{
     font-weight: 100;
     text-align: center;
 }
-
-
 
 
 .contato {
@@ -437,8 +435,6 @@ main{
 }
 
 
-
-
 .orcamento {
     background-color: #1c1b21;
     width: 100%;
@@ -464,6 +460,8 @@ main{
     color:aliceblue;
     margin: 30px;
 }
+
+
 .form form {
     background-color: #1c1b21;
     display: flex;
@@ -496,9 +494,6 @@ form [type="submit"]:hover {
     background-color: #db9315f1;
     color: aliceblue;
 }
-
-
-
 footer {
     background-color: black;
     height: 77px;
