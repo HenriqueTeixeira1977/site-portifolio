@@ -260,6 +260,19 @@ main{
     margin-top: 10px;
     font-weight: 100;
 }
+.cards a {
+    color: #C68F2F;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 10px;
+    font-weight: 100;
+}
+.cards a:hover {
+    color:aliceblue;
+    font-size: 21px;
+    transition: 0.3s all;
+
+}
 
 
 .sobre {
