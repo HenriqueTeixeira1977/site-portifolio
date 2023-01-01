@@ -16,7 +16,6 @@ html {
 
 
 body {
-    /*background-color: #1c1b21;*/    
     background-color:#1c1b21;    
     font-family: 'poppins', sans-serif;
     flex-direction: column;
@@ -255,7 +254,7 @@ main{
 }
 .cards p {
     color:aliceblue;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 25px;
     margin-top: 10px;
     font-weight: 100;
