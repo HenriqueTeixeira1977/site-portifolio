@@ -396,64 +396,50 @@ main{
     height: 800px;
     padding: 50px;
     align-items: center;
-    /*background-color:#1c1b21;*/
-    background-color:#1f00b7;
+    background-color:#1c1b21;
 }
 .contato aside {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-
     width: 50%;
     height: 500px;
-    background-color: brown;
-    border: 5px solid chartreuse;
 }
 .contato h2 {   
-    background-color: #1f00b7;
     font-size: 70px;
     line-height: 70px;
     font-weight: 100;
     color: #C68F2F;
 }
 .contato p {
-    background-color: #242529;
     color:aliceblue;
     font-size: 24px;
     line-height: 20px;
     margin-top: 10px;
     font-weight: 100;
 }
-
 .redes {
-    background-color: aqua;
     display: flex;
-    justify-content: space-between;
-
-}/*
-.btn-redes {
-    background-color: rgb(0, 0, 0);
-    font-size: 50px;
-}*/
+    justify-content:flex-start;
+    margin-left:0px;
+}
 .redes i {
     color:aliceblue;
     cursor: pointer;
     font-size: 50px;
     background-color: #000000;
-    padding: 20px;
-    border-radius: 20px;
+    margin-right: 20px;
+    padding: 30px 35px 30px 35px;
+    border-radius: 10px;
 }
-
-.btn-redes:hover {
+.redes i:hover {
     background-color:#C68F2F;
-    color: #000;
     font-size: 50px;
+    color: #000000;
 }
-
 
 .contato article {
-    border: 10px solid #000000;
-    margin: 10px;
+    margin: 20px;
 }
 
 
