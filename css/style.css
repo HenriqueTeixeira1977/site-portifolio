@@ -24,28 +24,49 @@ body {
     padding: 0px 0px;
 }
 
-header {   
-    width: 100%;
-    height: 77px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 100px;
+header{
     background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
-    top: 0; left: 0;   
-    margin: 0 auto; 
-    border-bottom: 2px solid #C68F2F}
-.logo a {
+    border-bottom: rgb(255, 217, 0) 3px solid;
+    z-index: 999;
+}
+header .header{
+    background-color: rgba(172, 255, 47, 0);
+    width: 99%;
+}
+header .header .container{
+    background-color: rgba(255, 0, 0, 0);
+    width: 99%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .header .container .menu{
+    background-color: rgba(238, 130, 238, 0);
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+header .logo a {
+    background-color: rgba(0, 255, 255, 0);
     color: aliceblue;
     padding: 20px;
 }
-.logo a:hover {
+header .logo a:hover {
     color: #C68F2F;
     transition: 0.3s all;
 }
-.logo {
+header .logo {
     flex-direction: column;
     line-height: 18px;
     align-items: center;
@@ -54,18 +75,18 @@ header {
     font-size: 10px;    
     cursor: pointer;
 }
-#a-logo{
+header #a-logo{
     padding: 0;
     text-decoration: none;
 }
-.logo h1 {
+header .logo h1 {
     font-weight: 300;
 }
-
-nav{
+header nav{
+    background-color: rgba(255, 255, 0, 0);
     margin: 0px;
 }
-nav ul li {
+header nav ul li {
     display: inline-block;
     justify-content: space-around;
     align-items:center;
@@ -73,15 +94,15 @@ nav ul li {
     font-size: 15px;
     text-decoration: none;
 }
-nav a {
+header nav a {
     color: aliceblue;
     padding: 20px;
 }
-nav a:hover {
+header nav a:hover {
     color: #C68F2F;
     transition: 0.3s all;
 }
-#btn-menu {
+header #btn-menu {
     border: 3px solid #C68F2F;
     color: aliceblue;
     padding: 3px 20px;
@@ -89,7 +110,7 @@ nav a:hover {
     margin-right: 0px;
     border-radius: 10px;      
 }
-#btn-menu:hover {
+header #btn-menu:hover {
     border: 3px solid aliceblue;
     background-color: #C68F2F;
     color: #1c1b21;
@@ -97,22 +118,33 @@ nav a:hover {
 }
 
 
+
 main{
     background-color:#1c1b21;
     width: 100%;
     flex-direction: column;
-    margin: 0 auto;
+    margin: auto;
     padding: 0px 0px 0px 0px;
 }
-
+main .hero{
+    background-color: #ff0000;
+    width: 85%;
+    margin: auto;
+}
+main .hero .container{
+    background-color: yellow;
+    width: 99%;
+    margin: auto;
+}
 
 .home{
+    width: 99%;
     flex-direction: row;
     height: 800px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 0px 0px 0px 0px;
+    margin: auto;
     padding: 100px 100px 100px 100px;
     background-color: #1c1b21;
 }
@@ -153,27 +185,28 @@ main{
     background-color:#C68F2F;
 }
 
-
-.home2 {
-    background-color:#1c1b21;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 700px;
-    margin: 0 auto;
-    padding: 0px 0px;
+.services {
+    background-color: red;
+    margin: auto;
+    padding-top: 100px;
 }
-.home2 .elemento {
+.services .container{
+    background-color: greenyellow;
+    width: 90%;
+    margin: auto;
+
+}
+.services .container .elemento {
     width: 100%;
     height: 00x;
     text-align: center;    
 }
-.home2 .elemento h3 {
+.services .container .servicos .elemento h3 {
     font-size: 50px;
     font-weight: 100;
     color: #C68F2F;
 }
-.home2 .elemento p {
+.services .container .servicos .elemento p {
     font-size: 18px;
     font-weight: 100;
     line-height: 25px;
@@ -181,7 +214,7 @@ main{
     margin: 0px 100px;
     padding: 0px 0px;
 }
-.cards{
+.services .container .servicos .cards{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -192,8 +225,7 @@ main{
     padding: 20px;
     border-radius: 10px;
 }
-
-.card1 {
+.services .container .servicos .card1 {
     width: 30%;
     height: 400px;
     display: block;
@@ -206,11 +238,11 @@ main{
     background-color: #242529;
     border-radius: 10px;
 }
-.card1:hover {
+.services .container .servicos .card1:hover {
     background-color: rgb(0, 0, 0);
     transition: 0.5s all;
 }
-.card2 {
+.services .container .servicos .card2 {
     width: 33%;
     height: 400px;
     display: block;
@@ -223,12 +255,11 @@ main{
     background-color: #242529;
     border-radius: 10px;
 }
-.card2:hover {
+.services .container .servicos .card2:hover {
     background-color: rgb(0, 0, 0);
     transition: 0.5s all;
-
 }
-.card3 {
+.services .container .servicos .card3 {
     width: 33%;
     height: 400px;
     display: block;
@@ -241,30 +272,30 @@ main{
     background-color: #242529;
     border-radius: 10px;
 }
-.card3:hover {
+.services .container .servicos .card3:hover {
     background-color: rgb(0, 0, 0);
     transition: 0.5s all;
 
 }
-.cards h3 {
+.services .container .servicos .cards h3 {
     font-size: 24px;
     color: #C68F2F;
 }
-.cards p {
+.services .container .servicos .cards p {
     color:aliceblue;
     font-size: 14px;
     line-height: 25px;
     margin-top: 10px;
     font-weight: 100;
 }
-.cards a {
+.services .container .servicos .cards a {
     color: #C68F2F;
     font-size: 20px;
     line-height: 25px;
     margin-top: 10px;
     font-weight: 100;
 }
-.cards a:hover {
+.services .container .servicos .cards a:hover {
     color:aliceblue;
     font-size: 21px;
     transition: 0.3s all;
@@ -274,14 +305,14 @@ main{
 
 .sobre {
     background-color:#1c1b21;
-    width: 100%;
-    height: 800px;
+    width: 90%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin: 0px 0px 50px 0px;
-    padding: 0px 0px 0px 0px;
+    margin: auto;
+    padding: 0px;
 }
 .sobre aside {
     background-color: blueviolet;
@@ -435,7 +466,6 @@ main{
     font-size: 50px;
     color: #000000;
 }
-
 .contato article {
     margin: 20px;
 }

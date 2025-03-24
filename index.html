@@ -13,38 +13,48 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 </head>
+
 <body>
-    <header id="header">
-        <div class="logo">
-            <h1><a id="a-logo" href="#inicio">HenriqueTeixeira</br>WebDeveloper</a></h1>
-        </div>
-        <nav>
-            <ul>
-                <a href="#inicio"><li>Inicio</li></a>
-                <a href="#sobre"><li>Sobre</li></a>
-                <a href="#servicos"><li>Serviços</li></a>
-                <a href="#portifolio"><li>Portifolio</li></a>
-                <a href="#contato"><li>Contato</li></a>
-                <a href="http://bit.ly/WhatsAppHDTBusiness" id="btn-menu" target="_blank"><li>Orçamento</li></a>
-            </ul>
-        </nav>
+    <header>
+        <section class="header" id="header">
+            <div class="container" id="container">
+                <div class="menu" id="menu">
+                    <div class="logo">
+                        <h1><a id="a-logo" href="#">HenriqueTeixeira</br>WebDeveloper</a></h1>
+                    </div>
+                    <nav>
+                        <ul>
+                            <a href="#"><li>Inicio</li></a>
+                            <a href="#services"><li>Serviços</li></a>
+                            <a href="#portifolio"><li>Portifolio</li></a>
+                            <a href="#sobre"><li>Sobre</li></a>
+                            <a href="#contato"><li>Contato</li></a>
+                            <a href="http://bit.ly/WhatsAppHDTBusiness" id="btn-menu" target="_blank"><li>Orçamento</li></a>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
     </header>
-
     <main>
-        <div class="home" id="inicio">
-            <aside id="inicio">        
-                <h2><span>Criando</br>Sites</span></h2>
-                <h2>Gerando</br>Resultados</h2></br>
-                <p>Criação de Sites Personalizados e Otimizados para todos os dispositivos.</br> 
-                    Integrados com Instagram, Facebook e WhatsApp.
-                </p></br>
-                <button class="btn"><a href="http://bit.ly/WhatsAppHDTBusiness" target="_blank">Saiba Mais</a></button>
-            </aside>        
-            <article id="img-home">
-                <img src="img/imagem-home.png" width="700px" height="600px" alt="Construtores de Sites">
-            </article>
-        </div>
-
+        <section class="hero" id="hero">
+            <div class="container" id="container">
+                <div class="home" id="inicio">
+                    <aside id="inicio">        
+                        <h2><span>Criando</br>Sites</span></h2>
+                        <h2>Gerando</br>Resultados</h2></br>
+                        <p>Criação de Sites Personalizados e Otimizados para todos os dispositivos.</br> 
+                            Integrados com Instagram, Facebook e WhatsApp.
+                        </p></br>
+                        <button class="btn"><a href="http://bit.ly/WhatsAppHDTBusiness" target="_blank">Saiba Mais</a></button>
+                    </aside>        
+                    <article id="img-home">
+                        <img src="img/imagem-home.png" width="700px" height="600px" alt="Construtores de Sites">
+                    </article>
+                </div
+            </div>
+        </section>
+<!--
         <div class="home2">
             <div class="elemento">
                 <h3>Web Design Freelancer</h3></br>
@@ -83,28 +93,50 @@
                 </div>
             </div>
         </div>
-
-        <div class="sobre" id="sobre">
-            <aside>
-                <img src="img/henrique-circle.png" width="500"  height="530px" alt="">                
-            </aside>
-            <article id="art-sobre">
-                <h3>SOBRE MIM</h3>
-                <h4>Olá, sou <b>Henrique Teixeira.</h4>
-                <p id="p-sobre">                    
-                    Sou apaixonado por projetar e desenvolver sites amigáveis​ ao usuário. 
-                    Tenho todas as competências para criar um novo website, <b><font color="#C68F2F">PROFISSIONAL, 
-                    de alta qualidade</font></b> ou melhorar websites já existentes para indivíduos e organizações, 
-                    utilizando as ferramentas, técnicas e tendências mais recentes.
-                    Meu foco é em construir sites profissionais, modernos e responsivos que gerem uma 
-                    experiência marcante ao seu usuário. </br></br> 
-                    Você está procurando um site profissional, de alta qualidade para sua organização 
-                    ou empresa a um preço competitivo?</br></br>            
-                </p>
-                <h4><b>CLIQUE NO BOTÃO ABAIXO!!!</h4></br></br>
-                <button class="btn"> <a href="http://bit.ly/WhatsAppHDTBusiness">Saiba Mais</a></button>
-            </article>
-        </div>
+-->
+        <section class="services" id="services">
+            <div class="container" id="container">
+                <div class="servicos" id="servicos">
+                    <div class="elemento">
+                        <h3>Web Design Freelancer</h3></br>
+                        <p>Web designer freelancer, especializado em gerar mais resultados para o seu negócio, </br>
+                            através de estratégias de marketing digital por meio da CRIAÇÃO DE SITE INSTITUCIONAIS, 
+                            LANDING PAGES e PÁGINAS DE VENDAS</br> 
+                            com design centrado na experiencia de usuário e focado em conversão. </br>
+                            Sua marca com mais credibilidade para seu negócio atrair muito mais clientes.                    
+                        </p></br>
+                    </div>
+                    <div class="cards">
+                        <div class="card1">
+                            <img id="produto1" src="img/website-institucional.png" width="100px" height="100px" alt="Website Institucional">
+                            <h3>Website Institucional</h3>
+                            <p>É o endereço da sua empresa na web, 
+                                onde seu negócio é representado em páginas virtuais que promovem sua marca, 
+                                seus produtos e seus serviços.</br>
+                            "QUEM NÃO ESTÁ NA INTERNET NÃO EXISTE" (Bill Gates)
+                            </p> 
+                            <a href="http://bit.ly/WhatsAppHDTBusiness">Saiba Mais >>> </a>
+                        </div>
+                        <div class="card2">
+                            <img id="produto2" src="img/website.png" width="100px" height="100px" alt="Landing Pages">
+                            <h3>Landing Pages</h3>
+                            <p> Um novo site da primeira ideia ao lançamento de sucesso. 
+                                Desenvolvemos um design atraente que se adapta ao seu negócio. 
+                                Construimos o seu site usando as técnicas e tendências mais recentes.</p>
+                            <a href="http://bit.ly/WhatsAppHDTBusiness">Saiba Mais >>> </a>  
+                        </div>
+                        <div class="card3">
+                            <img id="produto3" src="img/responsivo.png" width="100px" height="100px" alt="Sites Responsivos">
+                            <h3>Websites Responsivos</h3>
+                            <p>Só um site bonito, moderno, intuitivo e adaptável para todas as telas pode proporcionar a credibilidade necessária para que 
+                                sua empresa tenha a devida confiança, para que, seu futuro cliente decida por você e não pelo seu concorrente.</p>
+                            <a href="http://bit.ly/WhatsAppHDTBusiness">Saiba Mais >>> </a>        
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
 
         <div class="portifolio" id="portifolio">
             <aside>
@@ -132,6 +164,32 @@
                 <button class="btn"> <a href="http://bit.ly/WhatsAppHDTBusiness">Saiba Mais</a></button>
             </div>
         </div> 
+
+        <section class="about" id="about">
+            <div class="container" id="container">
+                <div class="sobre" id="sobre">
+                    <aside>
+                        <img src="img/henrique-circle.png" width="500"  height="530px" alt="">                
+                    </aside>
+                    <article id="art-sobre">
+                        <h3>SOBRE MIM</h3>
+                        <h4>Olá, sou <b>Henrique Teixeira.</h4>
+                        <p id="p-sobre">                    
+                            Sou apaixonado por projetar e desenvolver sites amigáveis​ ao usuário. 
+                            Tenho todas as competências para criar um novo website, <b><font color="#C68F2F">PROFISSIONAL, 
+                            de alta qualidade</font></b> ou melhorar websites já existentes para indivíduos e organizações, 
+                            utilizando as ferramentas, técnicas e tendências mais recentes.
+                            Meu foco é em construir sites profissionais, modernos e responsivos que gerem uma 
+                            experiência marcante ao seu usuário. </br></br> 
+                            Você está procurando um site profissional, de alta qualidade para sua organização 
+                            ou empresa a um preço competitivo?</br></br>            
+                        </p>
+                        <h4><b>CLIQUE NO BOTÃO ABAIXO!!!</h4></br></br>
+                        <button class="btn"> <a href="http://bit.ly/WhatsAppHDTBusiness">Saiba Mais</a></button>
+                    </article>
+                </div>
+            </div>
+        </section>
 
         <div class="contato" id="contato">
             <aside>
@@ -173,11 +231,14 @@
                 </form>
             </div>
         </div>
+
     </main>
+
     <footer>
         <div class="rodape">
-            <p>Henrique Teixeira WebDeveloper FrontEnd. ©2022 Todos direitos reservados - CPF: 026.392.714-82.</p>
+            <p>Henrique Teixeira WebDeveloper FrontEnd. ©2025 Todos direitos reservados - CPF: 026.392.714-82.</p>
         </div>   
     </footer>  
+
 </body>
 </html>
