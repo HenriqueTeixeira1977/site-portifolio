@@ -1,0 +1,25 @@
+@media screen and (max-width: 768px){    
+    body{
+        background-color: red;
+        width: 100%;
+    }
+/*  ----------  SESSÃO HEADER  ----------  */   
+
+    header{
+        background-color: rgb(9, 255, 0);
+        width: 50%;
+    }
+    header .header{
+        background-color: antiquewhite;
+    }
+    header .header .container .menu{
+        background-color: red;
+    }
+/*  ----------  SESSÃO HEADER  ----------  */   
+    main{
+            background-color: antiquewhite;
+    }
+    main .hero{
+        background-color: red;
+    }
+}

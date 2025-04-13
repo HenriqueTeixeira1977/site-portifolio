@@ -120,7 +120,7 @@ header #btn-menu:hover {
 
 
 main{
-    background-color:#1c1b21;
+    background-color:#1c1b2100;
     width: 100%;
     flex-direction: column;
     margin: auto;
@@ -132,13 +132,13 @@ main .hero{
     margin: auto;
 }
 main .hero .container{
-    background-color: yellow;
-    width: 99%;
+    background-color: rgba(255, 255, 0, 0);
+    width: 100%;
     margin: auto;
 }
 
 .home{
-    width: 99%;
+    width: 100%;
     flex-direction: row;
     height: 800px;
     display: flex;
@@ -186,12 +186,12 @@ main .hero .container{
 }
 
 .services {
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0);
     margin: auto;
     padding-top: 100px;
 }
 .services .container{
-    background-color: greenyellow;
+    background-color: rgba(172, 255, 47, 0);
     width: 90%;
     margin: auto;
 
@@ -315,7 +315,7 @@ main .hero .container{
     padding: 0px;
 }
 .sobre aside {
-    background-color: blueviolet;
+    background-color: rgba(137, 43, 226, 0);
     width: 50%;
     height: 100%;
     display: flex;
