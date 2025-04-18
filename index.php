@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/mediaquery.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbarMenu" data-bs-offset="70" tabindex="0">
@@ -151,15 +152,16 @@
                             <input type="tel" class="form-control" id="whatsapp" name="whatsapp" required>
                         </div>
                         <div class="mb-3">
-                            <label for="tipo" class="form-label">Tipo de site</label>
-                            <select class="form-select" id="tipo" name="tipo" required>
+                            <label for="tipo_site" class="form-label">Tipo de Site</label>
+                            <select class="form-select" id="tipo_site" name="tipo_site" required>
                                 <option value="">Selecione...</option>
-                                <option value="institucional">Institucional</option>
-                                <option value="landing">Landing Page</option>
-                                <option value="loja">Loja Virtual</option>
-                                <option value="outro">Outro</option>
+                                <option value="Institucional">Institucional</option>
+                                <option value="Portfólio">Portfólio</option>
+                                <option value="Loja Virtual">Loja Virtual</option>
+                                <option value="Landing Page">Landing Page</option>
+                                <option value="Outro">Outro</option>
                             </select>
-                        </div>
+                        </div>                        
                         <div class="mb-3">
                             <label for="mensagem" class="form-label">Mensagem</label>
                             <textarea class="form-control" id="mensagem" name="mensagem" rows="4"></textarea>

@@ -1,25 +1,44 @@
-@media screen and (max-width: 768px){    
-    body{
-        background-color: red;
-        width: 100%;
+h1 small {
+    display: block;
+}
+@media (max-width: 767px) {
+    header
+    header .container {
+        flex-direction: column;
+        text-align: center;
     }
-/*  ----------  SESSÃO HEADER  ----------  */   
+    nav .nav {
+        flex-direction: column;
+    }
+    #hero{ 
+        background-color: rgba(127, 255, 212, 0);
+    }
+    #hero .container .row{background-color: rgba(255, 0, 0, 0);
+        flex-direction: column-reverse;
+    }
+    #hero .text-start {
+        text-align: center !important;
+    }
+    #hero img {
+        margin-top: 30px;
+    }
+    #sobre .text-center img {
+        margin-bottom: 20px;
+    }
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+/* Efeito flutuante */
+.floating {
+    animation: float 2s ease-in-out infinite;
+}
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
 
-    header{
-        background-color: rgb(9, 255, 0);
-        width: 50%;
     }
-    header .header{
-        background-color: antiquewhite;
-    }
-    header .header .container .menu{
-        background-color: red;
-    }
-/*  ----------  SESSÃO HEADER  ----------  */   
-    main{
-            background-color: antiquewhite;
-    }
-    main .hero{
-        background-color: red;
+    50% {
+        transform: translateY(-20px);
     }
 }
