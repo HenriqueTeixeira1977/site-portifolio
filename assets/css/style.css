@@ -80,7 +80,7 @@ header {
     transform: translateY(-2px);
 }
 
-voltar-topo  {
+.voltar-topo  {
     width: 70px;
     height: 70px;
     padding: 0px;
@@ -96,7 +96,7 @@ voltar-topo  {
     z-index: 9999;
 }
 
-.voltar-topo{
+.voltar-topo i{
     color: var(--text-color);
 }
 

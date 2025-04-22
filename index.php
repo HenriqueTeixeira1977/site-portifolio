@@ -107,7 +107,7 @@
     </section>
 
     <!-- PORTFOLIO SECTION -->
-    <section class="py-5" id="portfolio" style="background: linear-gradient(135deg, #212529, #343a40); color: #fff;">
+    <section class="py-5" id="portfolio" style="background: linear-gradient(135deg,rgb(114, 114, 114), #343a40); color: #fff;">
     <div class="container text-center">
         <h2 class="mb-4 fw-bold" data-aos="fade-up">Portfólio</h2>
         <p data-aos="fade-up" data-aos-delay="100">
