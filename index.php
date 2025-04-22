@@ -161,9 +161,16 @@
 -->
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbarMenu" data-bs-offset="70" tabindex="0">
-    <button class="theme-toggle" onclick="toggleTheme()">
+    <button class="theme-toggle" data-aos="fade-down" data-aos-duration="1000" onclick="toggleTheme()">
         <i class="fas fa-moon"></i>
     </button>
+    <button class="whatsapp-fix" data-aos="fade-up" data-aos-duration="1000">
+        <a href="http://bit.ly/WhatsAppHDTBusiness" target="_blank"><i class="fab fa-whatsapp"></i></a> 
+    </button>
+    <button class="voltar-topo" data-aos="fade-up" data-aos-duration="1000">
+        <a href="#"><i class="fa-solid fa-arrow-up"></i></i></i></a> 
+    </button>
+
 
     <!-- HEADER -->
     <header class="sticky-top shadow">
@@ -171,7 +178,7 @@
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="#" data-aos="fade-down">
                     <img src="assets/img/favicon.ico" alt="HT Logo" width="40" height="40" class="me-2">
-                    <div>
+                    <div class="brand-txt" id="brand-txt">
                         <span class="h4 mb-0 text-white">Henrique Teixeira</span>
                         <small class="text-light">Web Developer</small>
                     </div>
@@ -200,7 +207,7 @@
     <!-- HERO SECTION -->
     <section class="hero-section text-center text-md-start" id="home">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center" id="topo">
                 <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
                     <h2 class="display-4 fw-bold">Crie um site que <span style="color: var(--gold-accent);">conquista clientes</span></h2>
                     <p class="lead mt-4">Transforme sua visão em um site profissional, responsivo e otimizado para conversões. Integrações com WhatsApp, Instagram e mais para alavancar seu negócio.</p>
@@ -248,26 +255,160 @@
 
     <!-- PORTFOLIO SECTION -->
     <section class="py-5" id="portfolio" style="background: linear-gradient(135deg, #212529, #343a40); color: #fff;">
-        <div class="container text-center">
-            <h2 class="mb-4 fw-bold" data-aos="fade-up">Portfólio</h2>
-            <p data-aos="fade-up" data-aos-delay="100">Descubra projetos que combinam design impactante com performance excepcional. Cada site é uma história de sucesso!</p>
-            <div class="row g-4 mt-4">
-                <div class="col-md-3" data-aos="zoom-in" data-aos-delay="100">
-                    <img src="assets/img/cafeverde.png" class="img-fluid portfolio-img" alt="Projeto 1">
-                </div>
-                <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="assets/img/Arbcrypto.png" class="img-fluid portfolio-img" alt="Projeto 2">
-                </div>
-                <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
-                    <img src="assets/img/empire.png" class="img-fluid portfolio-img" alt="Projeto 3">
-                </div>
-                <div class="col-md-3" data-aos="zoom-in" data-aos-delay="400">
-                    <img src="assets/img/RickWebDesigner.png" class="img-fluid portfolio-img" alt="Projeto 4">
-                </div>
+    <div class="container text-center">
+        <h2 class="mb-4 fw-bold" data-aos="fade-up">Portfólio</h2>
+        <p data-aos="fade-up" data-aos-delay="100">
+        Descubra projetos que combinam design impactante com performance excepcional. Cada site é uma história de sucesso!
+        </p>
+
+        <div class="row g-4 mt-4">
+        <!-- Card 1 -->
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="card h-100 text-bg-dark border-0 shadow-lg card-hover">
+            <img src="assets/img/portifolio/site001.webp" class="card-img-top" alt="Projeto 1">
+            <div class="card-body">
+                <h5 class="card-title">Página de Vendas</h5>
+                <p class="card-text">Design atual, performance otimizada e totalmente responsivo.</p>
+                <a href="#" class="btn btn-success btn-sm">Ver mais</a>
             </div>
-            <a href="http://bit.ly/WhatsAppHDTBusiness" class="btn btn-gold mt-4" data-aos="fade-up" data-aos-delay="500">Ver Mais Projetos</a>
+            </div>
         </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="card h-100 text-bg-dark border-0 shadow-lg card-hover">
+            <img src="assets/img/portifolio/site002.webp" class="card-img-top" alt="Projeto 2">
+            <div class="card-body">
+                <h5 class="card-title">Página de Vendas</h5>
+                <p class="card-text">Foco em conversão com conteúdo direto e impactante.</p>
+                <a href="#" class="btn btn-success btn-sm">Ver mais</a>
+            </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="card h-100 text-bg-dark border-0 shadow-lg card-hover">
+            <img src="assets/img/portifolio/site003.webp" class="card-img-top" alt="Projeto 3">
+            <div class="card-body">
+                <h5 class="card-title">Landin Page</h5>
+                <p class="card-text">Loja online com navegação simples e visual limpo.</p>
+                <a href="#" class="btn btn-success btn-sm">Ver mais</a>
+            </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="card h-100 text-bg-dark border-0 shadow-lg card-hover">
+            <img src="assets/img/portifolio/site004.webp" class="card-img-top" alt="Projeto 4">
+            <div class="card-body">
+                <h5 class="card-title">Página de Vendas</h5>
+                <p class="card-text">Apresentação elegante com identidade visual marcante.</p>
+                <a href="#" class="btn btn-success btn-sm">Ver mais</a>
+            </div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="card h-100 text-bg-dark border-0 shadow-lg card-hover">
+            <img src="assets/img/portifolio/site005.webp" class="card-img-top" alt="Projeto 5">
+            <div class="card-body">
+                <h5 class="card-title">Institucional</h5>
+                <p class="card-text">Navegação fluida e objetivo direto em uma única página.</p>
+                <a href="#" class="btn btn-success btn-sm">Ver mais</a>
+            </div>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="card h-100 text-bg-dark border-0 shadow-lg card-hover">
+            <img src="assets/img/portifolio/site006.webp" class="card-img-top" alt="Projeto 6">
+            <div class="card-body">
+                <h5 class="card-title">Institucional</h5>
+                <p class="card-text">Conteúdo organizado, SEO otimizado e leitura agradável.</p>
+                <a href="#" class="btn btn-success btn-sm">Ver mais</a>
+            </div>
+            </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="card h-100 text-bg-dark border-0 shadow-lg card-hover">
+            <img src="assets/img/portifolio/site007.webp" class="card-img-top" alt="Projeto 7">
+            <div class="card-body">
+                <h5 class="card-title">Institucional</h5>
+                <p class="card-text">Apresentação de empresa com foco em credibilidade e presença online.</p>
+                <a href="#" class="btn btn-success btn-sm">Ver mais</a>
+            </div>
+            </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="card h-100 text-bg-dark border-0 shadow-lg card-hover">
+            <img src="assets/img/portifolio/site008.webp" class="card-img-top" alt="Projeto 8">
+            <div class="card-body">
+                <h5 class="card-title">Institucional</h5>
+                <p class="card-text">Estilo clean, foco no conteúdo e usabilidade.</p>
+                <a href="#" class="btn btn-success btn-sm">Ver mais</a>
+            </div>
+            </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="card h-100 text-bg-dark border-0 shadow-lg card-hover">
+            <img src="assets/img/portifolio/site009.webp" class="card-img-top" alt="Projeto 9">
+            <div class="card-body">
+                <h5 class="card-title">Institucional</h5>
+                <p class="card-text">Design sob medida para necessidades específicas do cliente.</p>
+                <a href="#" class="btn btn-success btn-sm">Ver mais</a>
+            </div>
+            </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="card h-100 text-bg-dark border-0 shadow-lg card-hover">
+            <img src="assets/img/portifolio/site010.webp" class="card-img-top" alt="Projeto 10">
+            <div class="card-body">
+                <h5 class="card-title">Instituicional</h5>
+                <p class="card-text">Ideal para marketing digital e geração de leads.</p>
+                <a href="#" class="btn btn-success btn-sm">Ver mais</a>
+            </div>
+            </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="card h-100 text-bg-dark border-0 shadow-lg card-hover">
+            <img src="assets/img/portifolio/site011.webp" class="card-img-top" alt="Projeto 11">
+            <div class="card-body">
+                <h5 class="card-title">One Page</h5>
+                <p class="card-text">Painel visual moderno com gráficos e interações.</p>
+                <a href="#" class="btn btn-success btn-sm">Ver mais</a>
+            </div>
+            </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="card h-100 text-bg-dark border-0 shadow-lg card-hover">
+            <img src="assets/img/portifolio/site012.webp" class="card-img-top" alt="Projeto 12">
+            <div class="card-body">
+                <h5 class="card-title">One Page </h5>
+                <p class="card-text">Animações, transições e efeitos para uma experiência imersiva.</p>
+                <a href="#" class="btn btn-success btn-sm">Ver mais</a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
     </section>
+
 
     <!-- SOBRE SECTION -->
     <section class="py-5" id="sobre">
